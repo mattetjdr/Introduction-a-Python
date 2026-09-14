@@ -1,0 +1,8 @@
+print("Donne un nombre entier")
+nombre1=int(input())
+print("Donne moi un deuxième nombre entier")
+nombre2=int(input())
+print("Donne moi un troisième nombre entier")
+nombre3=int(input())
+print("La plus petite valeur est "+str(min(nombre1, nombre2, nombre3)))
+print("La plus grande valeur est "+str(max(nombre1, nombre2, nombre3)))
