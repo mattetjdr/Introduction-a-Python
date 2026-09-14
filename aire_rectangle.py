@@ -1,0 +1,6 @@
+print("Donne moi la longueur d'un rectangle")
+longueur=input()
+print("Donne moi la largeur d'un rectangle")
+largeur=input()
+aire=int(longueur) * int(largeur)
+print("L'aire du rectangle est "+ str(aire))

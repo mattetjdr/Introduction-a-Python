@@ -1,0 +1,7 @@
+print("Donne moi 1 nombre.")
+nombre1 = float(input())
+print("Donne moi un 2eme nombre.")
+nombre2 = float(input())
+print("Donne moi un 3eme nombre.")
+nombre3 = float(input())
+print(str(nombre1 + nombre2 + nombre3))
