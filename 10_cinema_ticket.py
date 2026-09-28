@@ -9,9 +9,7 @@ elif imax == "non":
 
 if reduction == "oui":
     prix = prix // 2
-elif age <= 17:
-    prix = prix - 4
-elif age >= 65:
+elif (age <= 17) or (age >= 65):
     prix = prix - 4
 
 print(f"Ton billet te coûteras : {prix} euros")
