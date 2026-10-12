@@ -6,14 +6,18 @@ number_of_notes = 0
 while instruction != "q":
     instruction = input("Insère une note sur 20 : ")
     if not instruction.isnumeric():
-        print("Valeur invalide")
-        continue
+        if instruction == 'q':
+            break
+        else:
+            print("Valeur invalide")
+            continue
     elif instruction.isnumeric():
-        if int(instruction) < 0 and instruction > 20:
+        if int(instruction) < 0 or int(instruction) > 20:
             print("Valeur trop basse ou trop haute")
             continue
         else:
-            note = note + instruction
+            note = note + int(instruction)
             number_of_notes += 1
 moyenne = float(note) / float(number_of_notes)
+moyenne = round(moyenne, 1)
 print(f"Ta moyenne est de {moyenne}/20")
