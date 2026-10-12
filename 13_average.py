@@ -18,6 +18,6 @@ while instruction != "q":
         else:
             note = note + int(instruction)
             number_of_notes += 1
-moyenne = float(note) / float(number_of_notes)
+moyenne = note / number_of_notes
 moyenne = round(moyenne, 1)
 print(f"Ta moyenne est de {moyenne}/20")
